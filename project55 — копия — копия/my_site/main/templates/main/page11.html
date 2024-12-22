@@ -1,0 +1,99 @@
+<!DOCTYPE html>    
+<html lang="ru">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Сайт по выбору карьеры</title>    
+    <style>  
+        body { 
+            margin: 0; 
+            font-family: 'Mplus 1p', sans-serif; 
+            background-color: #c4c1e3; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        } 
+        .team-work-preference-container1 {   
+            display: flex;   
+            justify-content: center;   
+            padding: 20px;   
+        } 
+         
+        .teamwork-preference-container2 {   
+            width: 100%;   
+            max-width: 600px; /* Уменьшил максимальную ширину для более компактного вида */   
+            background-color: #feeae3;   
+            border-radius: 20px; /* Уменьшил скругление углов */   
+            padding: 25px;   
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Добавил тень для глубины */  
+        } 
+         
+        .header-title, .team-work-preference-heading {   
+            text-align: center;   
+            margin-bottom: 20px; /* Добавил отступ между заголовками и содержимым */  
+        } 
+        
+        .team-preference-container3 {   
+            display: flex;   
+            flex-direction: column;   
+            align-items: center;   
+        } 
+        
+        .team-member-card {   
+            background-color: white;   
+            border-radius: 15px; /* Уменьшил скругление углов карточек */   
+            padding: 15px;   
+            margin: 10px 0;   
+            width: 100%;   
+            max-width: 400px;  
+            text-align: center;  
+        }  
+        
+        .my-button {
+            background-color:rgb(220, 218, 233) ; /* Цвет фона кнопок */
+            color: black; /* Цвет текста кнопок */
+            border: none; /* Убираем рамку */
+            border-radius: 8px; /* Скругляем углы кнопок */
+            padding: 10px 20px; /* Отступы внутри кнопок */
+            text-align: center; /* Центрируем текст внутри кнопок */
+            text-decoration: none; /* Убираем подчеркивание у ссылок */
+            display: inline-block; /* Делаем кнопку блочным элементом */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Курсор при наведении */
+            transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+        }
+
+        .my-button:hover {
+            background-color:rgb(169, 166, 196) ; /* Цвет фона при наведении */
+        }
+    </style> 
+</head>   
+
+<body>   
+    <div class="team-work-preference-container1">   
+        <div class="teamwork-preference-container2">   
+            <p class="header-title">Вопрос 11 из 15</p>   
+            <p class="team-work-preference-heading">{{ question }}</p> 
+            <form method='post'>
+                {%csrf_token%}
+            <div class="team-preference-container3">   
+                <div class="team-member-card">   
+                     <input type='radio' name='answer' value='A' required>Развивать навыки общения с людьми<br>
+                </div>   
+                <div class="team-member-card">   
+                    <input type='radio' name='answer' value='B' required>Обеспечивать получение знаний<br>
+                </div>   
+                <div class="team-member-card">   
+                    <input type='radio' name='answer' value='C' required>Формировать практические навыки для работы<br>   
+                </div> 
+                <div>
+            <a href="page12" button type="sumbit" class="my-button">Выбрать</button></a> 
+                </div>
+            </div>   
+        </div>   
+    </div>   
+    
+</body>   
+</html>

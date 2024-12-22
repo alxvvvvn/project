@@ -1,0 +1,71 @@
+<!DOCTYPE html>    
+<html lang="ru">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Сайт по выбору карьеры</title>    
+    <style>  
+        body {  
+            margin: 0;  
+            font-family: 'Mplus 1p', sans-serif;  
+            background-color: #c4c1e3; /* Цвет фона всей страницы */  
+        }
+        
+        .team-work-preference-container1 {  
+            display: flex;  
+            justify-content: center; /* Центрируем содержимое по горизонтали */  
+            padding: 20px; /* Отступы вокруг контейнера */  
+        }
+        
+        .teamwork-preference-container2 {  
+            width: 100%; /* Ширина контейнера на всю ширину страницы */  
+            max-width: 800px; /* Максимальная ширина контейнера (800 пикселей) */  
+            background-color: #feeae3; /* Цвет фона для контейнера с вопросом и ответами */  
+            border-radius: 20px; /* Скругляем углы контейнера */  
+            padding: 20px; /* Внутренние отступы для контейнера */  
+        }
+        
+        .header-title, .team-work-preference-heading {  
+            text-align: center; /* Центрируем текст заголовков */  
+        }
+        
+        .team-preference-container3 {  
+            display: flex;  
+            flex-direction: column; /* Располагаем карточки вертикально */  
+            align-items: center; /* Центрируем карточки по горизонтали */  
+        }
+        
+        .team-member-card {  
+            background-color: white; /* Цвет фона для карточек ответов */  
+            border-radius: 10px; /* Скругляем углы карточек */  
+            padding: 15px; /* Внутренние отступы для карточек */  
+            margin: 10px 0; /* Отступы между карточками по вертикали */  
+            width: 100%; /* Ширина карточек на всю ширину контейнера */  
+            max-width: 400px; /* Максимальная ширина карточек (400 пикселей) */  
+            text-align: center; /* Центрируем текст внутри карточек */  
+        }
+        
+ 
+    </style> 
+</head>   
+   
+<body>   
+    <div class="team-work-preference-container1">   
+        <div class="teamwork-preference-container2">   
+            <p class="header-title">Результат</p>    
+            <div class="team-preference-container3">   
+                <div class="team-member-card">   
+                    <p class="bold-centered-text"> <li>Работа с людьми: {{ results.A }} баллов</li> </p>   
+                </div>   
+                <div class="team-member-card">   
+                    <p class="bold-centered-text"> <li>Интеллектуально-исследовательская работа: {{ results.B }} баллов</li> </p>   
+                </div>   
+                <div class="team-member-card">   
+                    <p class="bold-centered-text"><li>Эстетические виды деятельности: {{ results.C }} баллов</li> </p>   
+                </div>     
+            </div>   
+        </div>   
+    </div>   
+</body>   
+</html> 

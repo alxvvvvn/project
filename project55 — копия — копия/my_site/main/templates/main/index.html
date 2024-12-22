@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Сайт по выбору карьеры</title> 
+ 
+    <style> 
+        /* Общие стили */
+        .main-content-container { 
+	    height: 100%;
+            box-sizing: border-box;  
+	    flex-direction: column; 
+            display: flex;
+            align-items: stretch; 
+	    justify-content: flex-start; 
+            background: #feeae3;
+        } 
+ 
+        .gradient-background-container { 
+            box-sizing: border-box; 
+            display: flex; 
+            flex: 1 1 auto; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+	    padding: 12% 12% 12%;
+            background: linear-gradient( 
+                260.36deg, 
+                rgba(124, 115, 230, 1) 1.14%, 
+                rgba(69, 64, 128, 1) 99.57% 
+            ); 
+            border: 1px solid black; 
+            height: 100%; 
+        } 
+ 
+        .bold-centered-white-text { 
+            font-weight: bold; 
+            font-size: 35px; 
+            color: white; 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            font-style: italic; 
+	    margin-top: 0%;
+        } 
+ 
+        .hero-text-styles { 
+            font-weight: bold; 
+            font-size: 100px; 
+            color: white; 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            font-style: italic; 
+            margin-top: 1%; 
+        } 
+ 
+        .activity-test-container { 
+            box-sizing: border-box;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start; 
+            padding-right: 0%;
+            height: 100%; 
+        } 
+ 
+        .activity-prompt-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start; 
+        } 
+ 
+        .header-text-display-style { 
+            font-weight: bold; 
+            font-size: 100px; 
+            color: black; 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            font-style: italic; 
+        } 
+ 
+        .activity-card { 
+            box-sizing: border-box; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: stretch; 
+            justify-content: flex-start; 
+            margin-top: 15%; 
+            background: #6c63ff; 
+            border-radius: 30px;
+            color: white;
+        } 
+ 
+        .test-title-heading-style { 
+            margin-top: 30px; 
+            width: 200px; 
+            height: 50px; 
+            background-color: #6c63ff; 
+            color: white; 
+            border: none; 
+            border-radius: 10px; 
+            font-size: 40px; 
+            cursor: pointer; 
+        } 
+ 
+        .test-title-heading-style:hover { 
+            background-color: #5754d2;  
+        } 
+    </style> 
+</head> 
+ 
+<body>
+       <div class="main-content-container"> 
+            <div class="gradient-background-container"> 
+                <p class="bold-centered-white-text">LUBUK</p> 
+                <p class="hero-text-styles">Профориентационный тест <br />для детей любого возраста</p> 
+            </div> 
+             
+            <div class="activity-test-container"> 
+                <div class="activity-prompt-container"> 
+                  <p class="header-text-display-style">Пройдите этот тест прямо сейчас!</p> 
+                  <a href="page" button class="test-title-heading-style" onclick="startTest()">Начать тест</button></a>
+                </div> 
+ 
+                <div class="activity-card"> 
+                    <p>Тест поможет вам выбрать подходящую профессию.</p> 
+                </div> 
+                 
+                 
+                 
+            </div> 
+        </div> 
+    </div> 
+   
+    <script> 
+        function startTest() { 
+            alert("Тест начинается!"); // Здесь можно добавить переход на страницу теста 
+        } 
+    </script> 
+  </body> 
+  </html>
